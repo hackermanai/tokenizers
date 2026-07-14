@@ -1,7 +1,7 @@
 
 # MIT License
 
-# Copyright 2025 @asyncze (Michael Sjöberg)
+# Copyright 2025 Hackerman, Inc. (michael@hackerman.ai)
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -283,11 +283,11 @@ ACCEPTED_NAMES = {
     "auto_indent": "bool",
     "auto_complete": "bool",
     
-    "auto_close_single_quote": "bool",
-    "auto_close_double_quote": "bool",
-    "auto_close_square_bracket": "bool",
-    "auto_close_curly_bracket": "bool",
-    "auto_close_parentheses": "bool",
+    # "auto_close_single_quote": "bool",
+    # "auto_close_double_quote": "bool",
+    # "auto_close_square_bracket": "bool",
+    # "auto_close_curly_bracket": "bool",
+    # "auto_close_parentheses": "bool",
     
     "file_explorer_root": "path",
     "file_types_to_exclude": "list",
@@ -318,17 +318,23 @@ ACCEPTED_NAMES = {
 
     "cursor_width": "int",
     "cursor_extra_height": "int",
+    
     "cursor_as_block": "bool",
     "cursor_line_highlight": "bool",
+    
     "cursor_blink": "bool",
     "cursor_blink_period": "int",
+    
     # "cursor_neon_effect": "bool",
 
     # -- statusbar
 
     "show_line_info": "bool",
+    "show_file_explorer_root": "bool",
+    "show_file_with_path": "bool",
     "show_model_metrics": "bool",
     "show_active_lexer": "bool",
+    
     # "show_debug_info": "bool",
 
     # -- misc
@@ -341,28 +347,25 @@ ACCEPTED_NAMES = {
     "minimap_width": "int",
     
     "open_on_largest_screen": "bool",
-    "dim_non_active_editors": "bool",
-    "fixed_line_number_width": "bool",
+    
+    # "dim_non_active_editors": "bool",
+    # "fixed_line_number_width": "bool",
 
     "eol_mode": ["crlf", "cr", "lf"],
     "eol_symbols_visible": "bool",
     
     "terminal_to_use": "name",
-    "path_to_shell": "path",
+    # "path_to_shell": "path",
     
     "window_opacity": "float",
     "selection_opacity": "float",
     "indent_guides_opacity": "float",
     "whitespace_opacity": "float",
 
-    "whitespace_symbol": 1,
     "unsaved_symbol": 1,
+    "whitespace_symbol": 1,
 
     "vertical_rulers": "list",
-
-    # [models]
-
-    "ollama": "name",
 }
 
 cdef int is_int(str text):
